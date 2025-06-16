@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="w-full py-4 px-5 border-b-2 border-[#131519]">
+    <section className="w-full py-4 px-5 border-b-2 border-[#131519]">
       <div className="flex mx-auto justify-between items-center max-w-11/12 h-full">
         <div className="flex items-center gap-3">
           <Image
@@ -17,6 +17,7 @@ export default function Navbar() {
         {["Docs", "Blog", "Company", "Community", "Pricing"].map(
           (item, index) => (
             <a
+              key={index}
               className="font-mono text-lg text-[#636475] hover:text-[#7d7e8e] cursor-pointer"
               href="/"
             >
@@ -31,6 +32,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
