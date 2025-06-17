@@ -17,12 +17,12 @@ export default function HeroSection() {
           <div className="relative flex items-center gap-4">
             <div className="relative">
               <div className="absolute -inset-2 rounded-full animated-gradient"></div>
-              <button className="flex items-center gap-2 relative px-5 py-3 bg-[#000000e6]  rounded-full shadow-2xl shadow-red-400 cursor-pointer transition-all">
+              <button className="flex items-center gap-2 relative px-5 py-3 bg-[#000000e6] rounded-full shadow-2xl shadow-red-400 cursor-pointer transition-all">
                 <p className="font-inter font-semibold text-xl">Try for free</p>
                 <ArrowRight />
               </button>
             </div>
-            <button className="flex items-center gap-2 px-5 py-3 bg-[#1c1c2666] rounded-full  cursor-pointer hover:bg-[#37373d66] shadow-button">
+            <button className="flex items-center gap-2 px-5 py-3 bg-[#1c1c2666] rounded-full cursor-pointer hover:bg-[#37373d66] shadow-button">
               <p className="font-inter font-semibold text-xl">Watch Video</p>
               <Play color="#fff" fill="#fff" size={"1.2em"} />
             </button>
