@@ -38,7 +38,7 @@
       background-position: 0% center;
     }
     100% {
-      background-position: 200% center;
+      background-position: -200% center;
     }
   }
 }
@@ -54,6 +54,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
 .animated-gradient {
@@ -62,8 +63,15 @@ body {
   animation: var(--animate-motion);
 }
 
+/* animated-bg-gradient::before {
+  background-color: #0a0a0a;
+  content: "";
+  position: absolute;
+  inset: 0;
+} */
+
 .tile::before {
-  background-color: blue;
+  background-color: rgba(38, 38, 145, 0.5);
   content: "";
   position: absolute;
   inset: 0.5px;
